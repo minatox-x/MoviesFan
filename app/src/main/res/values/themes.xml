@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Smarterz" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <item name="colorPrimary">#E50914</item>
+        <item name="colorPrimaryVariant">#B20710</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#E50914</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="android:statusBarColor">#0c0c0c</item>
+        <item name="android:navigationBarColor">#0c0c0c</item>
+        <item name="android:windowBackground">#0c0c0c</item>
+        <item name="android:textColorPrimary">#e5e5e5</item>
+        <item name="android:textColorSecondary">#b3b3b3</item>
+    </style>
+</resources>
