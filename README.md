@@ -130,8 +130,7 @@ Incoming URL
     └── Everything else                                                 →  DROP
 ```
 
-**Allowed player domains:** `vidsrc.to`, `vidsrc.xyz`, `vidsrc.net`, `vidsrc.in`, `vidsrc.pm`, `vidsrc.rip`, `cloudnestra`, `vidplay`, `filemoon`, `megacloud`, `rabbitstream`, `youtube`
-
+**Allowed player domains:** `vidsrcme.ru`, `cloudorchestranova.com`, Some other known Alternative Domains for future redirection to them
 **Fullscreen JS iron-lock (6 sections injected on every page):**
 1. Override `navigator.webdriver`, `platform`, and `userAgent` to spoof desktop Chrome
 2. Block `window.open` popups from non-player domains
@@ -162,7 +161,7 @@ Incoming URL
 
 **1. Clone**
 ```bash
-git clone https://github.com/yourname/MoviesFan.git
+git clone https://github.com/minatox-x/MoviesFan.git
 cd MoviesFan
 ```
 
@@ -172,7 +171,7 @@ File → Open → select the project root. Let Gradle sync.
 
 **3. Add your TMDB API key**
 
-The key is baked into `TmdbApi.kt`. Replace the `KEY` constant with your own from [themoviedb.org/settings/api](https://www.themoviedb.org/settings/api).
+The key is baked into `TmdbApi.kt`. Replace the `KEY` constant if you want with your own from [themoviedb.org/settings/api](https://www.themoviedb.org/settings/api).
 
 **4. Build & Run**
 
@@ -180,7 +179,9 @@ The key is baked into `TmdbApi.kt`. Replace the `KEY` constant with your own fro
 ./gradlew installDebug
 ```
 
-> Requires Android 7.0 (API 24) or higher. Target SDK 34.
+> Requires Android 7.0 (API 24) or higher. Target SDK 34.  
+> You can also use the built-in Github Workflow if you want to Compile your Apk.
+> In Github Workflow, it already have a built in jks file and file passwords for a Usable Release version, but if you want you can replace them with your own .
 
 ---
 
@@ -243,7 +244,7 @@ That's it. No storage, no location, no camera.
 
 ## Known Limitations
 
-- Stream availability depends on third-party embed providers — sources go down occasionally
+- Stream availability depends on third-party embed providers — sources go down occasionally and Some Streams may not be available
 - Initial player load can take 3–5 seconds on slow connections due to JS-heavy redirect chains
 - Subtitles depend entirely on the embed provider and aren't always available
 - Some player domains may rotate — update `ALLOWED_DOMAINS` in `SmartWebViewClient` if streams stop loading
@@ -270,6 +271,6 @@ MoviesFan does not host or distribute any media content. It embeds publicly acce
 
 <div align="center">
 
-Built with ♥ in Kotlin — dark theme, red accent, zero ads.
+Built with ♥ and a lot of Caffeine.
 
 </div>
